@@ -1,12 +1,3 @@
-/*
- * Author: Carlos Alvarez
- * URL: http://alvarez.is
- *
- * Project Name: Munter - Free Bootstrap 3 Theme
- * Version: 1.0
- * URL: http://blacktie.co
- */
- 
 .font-thin {
 	font-family: "Titillium Web", sans-serif;
 	font-weight: bold;
@@ -58,11 +49,28 @@ body {
 .font-size-40
 {
 	font-size: 25px;
+	color: #0f1452;
 }
 .contact-text-decoration
 {
 	font-size: 18px;
-    text-align: left;
+	text-align: justify;
+}
+
+.send-box-style
+{
+	margin-top: -2rem;
+    /* border: 1px solid goldenrod; */
+    border-radius: 5px;
+    box-shadow: 20px 20px 20px 0px lightgrey;
+}
+
+
+.form-control::placeholder { /* Most modern browsers support this now. */
+	color: #0f1452 ;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: monospace;
 }
 
 .min-hght
@@ -71,10 +79,21 @@ body {
 }
 .send-btn
 {
-	background-color: white;
-    color: black;
+	background-color: #4f004f;
+    color: white;
     font-weight: bold;
     widtH: 25%;
+    font-family: monospace;
+    font-size: 17px;
+}
+
+.color-for-text
+{
+	border-color: #4f004f;
+	color: black;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 17px;
 }
 .send--details
 {
@@ -117,7 +136,7 @@ body {
 
 .navbar.inv {
 	background-color: rgba( 0, 0, 0, .5 );
-	border-bottom: 1px solid #bfbfbf;
+	border-bottom: 1px solid white;
 }
 
 .navbar .nav a {
@@ -198,10 +217,37 @@ body {
 	#slide-4 .content-row h2 {
 		min-height: 6em;
 	}
+	.contact-text-decoration
+{
+	font-size: 18px;
+	text-align: center;
+}
+.hr-for-mbl
+{
+	display: block;
+}
+.brdr-btm
+{
+	border-bottom: 1px solid darkgrey;
+    margin-bottom: 15px;
+}
 }
 
 @media (max-width: 767px) {
-	
+	.brdr-btm
+{
+	border-bottom: 1px solid darkgrey;
+    margin-bottom: 15px;
+}
+	.contact-text-decoration
+{
+	font-size: 18px;
+	text-align: center;
+}
+.hr-for-mbl
+{
+	display: block;
+}
 	.nav li {
 		text-align: left;
 		white-space: nowrap;
@@ -220,7 +266,7 @@ body {
 	}
 	
 	.navbar {
-		background-color: #e4e6e5 !important;
+		background-color: #9c329c !important;
 		padding: 0;
 	}
 	
@@ -295,13 +341,13 @@ body {
 
 @media (max-width: 991px) {
 	#slide-1 {
-		/*background-position: -70% 0, 170% 0;*/
+		/* background-position: -70% 0, 170% 0; */
 	}
 }
 
 @media (max-width: 767px) {
 	#slide-1 {
-		/*background-image: none;*/
+		/* background-image: none; */
 	}
 }
 
@@ -414,8 +460,8 @@ body {
 {
 	max-width: 100%;
     margin-top: 26px;
-    background-color: #001520 ;
-    color: cornsilk;
+    background-color: #001520;
+    color: white;
 }
 
 	.title-row {
@@ -424,7 +470,7 @@ body {
 	}
 	
 	.line-row .hr {
-		background-color: #e4e6e5;
+		background-color: goldenrod;
 		height: 5px;
 		margin: 0 auto;
 		width: 33%;
@@ -549,8 +595,8 @@ body {
 }
 
 #slide-4 {
-	background-color: #34495e;
-	color: #e4e6e5;
+	background-color: #001520;
+    color: white;
 	padding-top: 90px;
 }
 
@@ -562,8 +608,8 @@ body {
 
 #slide-5 {
 	padding-top: 70px;
-	background-color: #001520;
-	color: white !important;
+	background-color: #ffffff;
+    color: #0f1452 !important;
     font-size: 16px;
     font-weight: bold !important;
 }
